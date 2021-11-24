@@ -129,7 +129,7 @@ function M.load_syntax(colors)
 	syntax['Identifier'] = {fg=colors.blue}
 	syntax['Ignore'] = {fg=colors.none,ctermfg=colors.none,ctermbg=colors.none}
 	syntax['PreProc'] = {fg=colors.orange}
-	syntax['Special'] = {fg=colors.orange}
+	syntax['Special'] = {fg=colors.none}
 	syntax['Statement'] = {fg=colors.green}
 	syntax['Todo'] = {fg=colors.magenta,style='bold'}
 	syntax['Type'] = {fg=colors.yellow}
