@@ -36,9 +36,9 @@ function M.load_syntax(colors)
 
   syntax["StatusLine"] = { fg = colors.base0, bg = colors.base02, style = "reverse" }
   syntax["StatusLineNC"] = { fg = colors.base01, bg = colors.base02, style = "reverse" }
-  syntax["TabLine"] = { fg = colors.base01, bg = colors.base02, style = "reverse" }
-  syntax["TabLineFill"] = { fg = colors.base01, bg = colors.base02, style = "reverse" }
-  syntax["TabLineSel"] = { fg = colors.base0, bg = colors.base02, style = "reverse" }
+  syntax["TabLine"] = { fg = colors.base02, bg = colors.base01, style = "reverse" }
+  syntax["TabLineFill"] = { fg = colors.base02, bg = colors.base01, style = "reverse" }
+  syntax["TabLineSel"] = { fg = colors.base0, bg = colors.base3, style = "reverse" }
   syntax["VertSplit"] = { fg = colors.base01 }
 
   syntax["CursorLineNr"] = { fg = colors.base0, bg = colors.base02, style = "bold" }
