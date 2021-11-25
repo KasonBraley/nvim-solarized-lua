@@ -40,10 +40,10 @@ function M.load_syntax(colors)
 		syntax['DiffDelete'] = {fg=colors.red, bg=colors.none, style='reverse'}
 		syntax['DiffText'] = {fg=colors.blue, bg=colors.none, style='reverse'}
 	else
-		syntax['DiffAdd'] = {fg=colors.green,bg=colors.base02,guisp=colors.green}
-		syntax['DiffChange'] = {fg=colors.yellow,bg=colors.base02,guisp=colors.yellow}
-		syntax['DiffDelete'] = {fg=colors.red,bg=colors.base02,style='bold'}
-		syntax['DiffText'] = {fg=colors.blue,bg=colors.base02,guisp=colors.blue}
+		syntax['DiffAdd'] = {fg=colors.green,bg=colors.base03,guisp=colors.green}
+		syntax['DiffChange'] = {fg=colors.yellow,bg=colors.base03,guisp=colors.yellow}
+		syntax['DiffDelete'] = {fg=colors.red,bg=colors.base03,style='bold'}
+		syntax['DiffText'] = {fg=colors.blue,bg=colors.base03,guisp=colors.blue}
 	end
 
 	if g.solarized_statusline == 'low' then
