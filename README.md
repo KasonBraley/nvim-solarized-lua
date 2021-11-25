@@ -1,5 +1,7 @@
 # Solarized Neovim
 
+This is a fork of the original plugin used for personal customization purposes.
+
 This aims to be a complete port [vim-solarized8](https://github.com/lifepillar/vim-solarized8) with support for lua
 plugins, LSP and Treesitter for neovim 0.5.
 
