@@ -118,7 +118,7 @@ function M.load_syntax(colors)
 	syntax['Question'] = {fg=colors.cyan,style='bold'}
 	syntax['Search'] = {fg=colors.yellow,style='reverse'}
 	syntax['SignColumn'] = {fg=colors.base0}
-	syntax['Visual'] = {fg=colors.base01,bg=colors.base03,style='reverse'}
+  syntax['Visual'] = {fg=colors.base01,bg=colors.base3,style='reverse'}
 	syntax['VisualNOS'] = {fg=colors.none,bg=colors.base02,style='reverse'}
 	syntax['WarningMsg'] = {fg=colors.orange,style='bold'}
 	syntax['WildMenu'] = {fg=colors.base2,bg=colors.base02,style='reverse'}
