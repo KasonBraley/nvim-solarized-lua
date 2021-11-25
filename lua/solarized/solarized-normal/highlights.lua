@@ -376,7 +376,7 @@ function M.load_syntax(colors)
 	syntax['TSStringEscape'] = syntax['Constant']
 	syntax['TSStrong'] = {fg=colors.base1,bg=colors.base03,style='bold'}
 	syntax['TSConstructor'] = syntax['Function']
-	syntax['TSKeywordFunction'] = syntax['Identifier']
+	syntax['TSKeywordFunction'] = syntax['Statement']
 	syntax['TSLiteral'] = syntax['Normal']
 	syntax['TSParameter'] = syntax['Identifier']
 	syntax['TSVariable'] = syntax['Normal']
