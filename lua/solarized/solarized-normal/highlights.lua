@@ -1,10 +1,8 @@
 local M = {}
 local cmd = vim.cmd
 local g = vim.g
-local o = vim.o
 local fn = vim.fn
 local utils = require("solarized.utils")
-local colors
 
 cmd("hi clear")
 
@@ -147,92 +145,6 @@ function M.load_syntax(colors)
   syntax["hsType"] = { fg = colors.yellow }
   syntax["hsTypedef"] = { fg = colors.cyan }
   syntax["hsModuleName"] = { fg = colors.green }
-  syntax["pandocTitleBlock"] = { fg = colors.blue }
-  syntax["pandocTitleBlockTitle"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocTitleComment"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocComment"] = { fg = colors.base01, style = utils.italics() }
-  syntax["pandocVerbatimBlock"] = { fg = colors.yellow }
-  syntax["pandocBlockQuote"] = { fg = colors.blue }
-  syntax["pandocBlockQuoteLeader1"] = { fg = colors.blue }
-  syntax["pandocBlockQuoteLeader2"] = { fg = colors.cyan }
-  syntax["pandocBlockQuoteLeader3"] = { fg = colors.yellow }
-  syntax["pandocBlockQuoteLeader4"] = { fg = colors.red }
-  syntax["pandocBlockQuoteLeader5"] = { fg = colors.base0 }
-  syntax["pandocBlockQuoteLeader6"] = { fg = colors.base01 }
-  syntax["pandocListMarker"] = { fg = colors.magenta }
-  syntax["pandocListReference"] = { fg = colors.magenta }
-  syntax["pandocDefinitionBlock"] = { fg = colors.violet }
-  syntax["pandocDefinitionTerm"] = { fg = colors.violet, style = "standout" }
-  syntax["pandocDefinitionIndctr"] = { fg = colors.violet, style = "bold" }
-  syntax["pandocEmphasisDefinition"] = { fg = colors.violet, style = utils.italics() }
-  syntax["pandocEmphasisNestedDefinition"] = { fg = colors.violet, style = "bold" }
-  syntax["pandocStrongEmphasisDefinition"] = { fg = colors.violet, style = "bold" }
-  syntax["pandocStrongEmphasisNestedDefinition"] = { fg = colors.violet, style = "bold" }
-  syntax["pandocStrongEmphasisEmphasisDefinition"] = { fg = colors.violet, style = "bold" }
-  syntax["pandocStrikeoutDefinition"] = { fg = colors.violet, style = "reverse" }
-  syntax["pandocVerbatimInlineDefinition"] = { fg = colors.violet }
-  syntax["pandocSuperscriptDefinition"] = { fg = colors.violet }
-  syntax["pandocSubscriptDefinition"] = { fg = colors.violet }
-  syntax["pandocTable"] = { fg = colors.blue }
-  syntax["pandocTableStructure"] = { fg = colors.blue }
-  syntax["pandocTableZebraLight"] = { fg = colors.blue, bg = colors.base03 }
-  syntax["pandocTableZebraDark"] = { fg = colors.blue, bg = colors.base02 }
-  syntax["pandocEmphasisTable"] = { fg = colors.blue, style = utils.italics() }
-  syntax["pandocEmphasisNestedTable"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocStrongEmphasisTable"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocStrongEmphasisNestedTable"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocStrongEmphasisEmphasisTable"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocStrikeoutTable"] = { fg = colors.blue, style = "reverse" }
-  syntax["pandocVerbatimInlineTable"] = { fg = colors.blue }
-  syntax["pandocSuperscriptTable"] = { fg = colors.blue }
-  syntax["pandocSubscriptTable"] = { fg = colors.blue }
-  syntax["pandocHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocHeadingMarker"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocEmphasisHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocEmphasisNestedHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocStrongEmphasisHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocStrongEmphasisNestedHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocStrongEmphasisEmphasisHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocStrikeoutHeading"] = { fg = colors.orange, style = "reverse" }
-  syntax["pandocVerbatimInlineHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocSuperscriptHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocSubscriptHeading"] = { fg = colors.orange, style = "bold" }
-  syntax["pandocLinkDelim"] = { fg = colors.base01 }
-  syntax["pandocLinkLabel"] = { fg = colors.blue }
-  syntax["pandocLinkText"] = { fg = colors.blue }
-  syntax["pandocLinkURL"] = { fg = colors.base00 }
-  syntax["pandocLinkTitle"] = { fg = colors.base00 }
-  syntax["pandocLinkTitleDelim"] = { fg = colors.base01, guisp = colors.base00 }
-  syntax["pandocLinkDefinition"] = { fg = colors.cyan, guisp = colors.base00 }
-  syntax["pandocLinkDefinitionID"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocImageCaption"] = { fg = colors.violet, style = "bold" }
-  syntax["pandocFootnoteLink"] = { fg = colors.green }
-  syntax["pandocFootnoteDefLink"] = { fg = colors.green, style = "bold" }
-  syntax["pandocFootnoteInline"] = { fg = colors.green, style = "bold" }
-  syntax["pandocFootnote"] = { fg = colors.green }
-  syntax["pandocCitationDelim"] = { fg = colors.magenta }
-  syntax["pandocCitation"] = { fg = colors.magenta }
-  syntax["pandocCitationID"] = { fg = colors.magenta }
-  syntax["pandocCitationRef"] = { fg = colors.magenta }
-  syntax["pandocStyleDelim"] = { fg = colors.base01 }
-  syntax["pandocEmphasis"] = { fg = colors.base0, style = utils.italics() }
-  syntax["pandocEmphasisNested"] = { fg = colors.base0, style = "bold" }
-  syntax["pandocStrongEmphasis"] = { fg = colors.base0, style = "bold" }
-  syntax["pandocStrongEmphasisNested"] = { fg = colors.base0, style = "bold" }
-  syntax["pandocStrongEmphasisEmphasis"] = { fg = colors.base0, style = "bold" }
-  syntax["pandocStrikeout"] = { fg = colors.base01, style = "reverse" }
-  syntax["pandocVerbatimInline"] = { fg = colors.yellow }
-  syntax["pandocSuperscript"] = { fg = colors.violet }
-  syntax["pandocSubscript"] = { fg = colors.violet }
-  syntax["pandocRule"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocRuleLine"] = { fg = colors.blue, style = "bold" }
-  syntax["pandocEscapePair"] = { fg = colors.red, style = "bold" }
-  syntax["pandocCitationRef"] = { fg = colors.magenta }
-  syntax["pandocNonBreakingSpace"] = { fg = colors.red, style = "reverse" }
-  syntax["pandocMetadataDelim"] = { fg = colors.base01 }
-  syntax["pandocMetadata"] = { fg = colors.blue }
-  syntax["pandocMetadataKey"] = { fg = colors.blue }
-  syntax["pandocMetadata"] = { fg = colors.blue, style = "bold" }
 
   syntax["Boolean"] = syntax["Constant"]
   syntax["Character"] = syntax["Constant"]
@@ -283,14 +195,6 @@ function M.load_syntax(colors)
   syntax["hsDelimTypeExport"] = syntax["Delimiter"]
   syntax["hsModuleStartLabel"] = syntax["hsStructure"]
   syntax["hsModuleWhereLabel"] = syntax["hsModuleStartLabel"]
-  syntax["pandocVerbatimBlockDeep"] = syntax["pandocVerbatimBlock"]
-  syntax["pandocCodeBlock"] = syntax["pandocVerbatimBlock"]
-  syntax["pandocCodeBlockDelim"] = syntax["pandocVerbatimBlock"]
-  syntax["pandocTableStructureTop"] = syntax["pandocTableStructre"]
-  syntax["pandocTableStructureEnd"] = syntax["pandocTableStructre"]
-  syntax["pandocEscapedCharacter"] = syntax["pandocEscapePair"]
-  syntax["pandocLineBreak"] = syntax["pandocEscapePair"]
-  syntax["pandocMetadataTitle"] = syntax["pandocMetadata"]
 
   -- TreeSitter
   -- syntax['TSAnnotation'] = syntax['']
