@@ -242,21 +242,21 @@ function M.load_syntax(colors)
   syntax["TSTypeBuiltin"] = syntax["Type"]
   -- syntax['TSEmphasis'] = syntax['']
 
-  syntax["LspDiagnosticsDefaultError"] = { fg = colors.red, guisp = colors.red, style = "none" }
-  syntax["LspDiagnosticsDefaultWarning"] = { fg = colors.yellow, guisp = colors.yellow, style = "none" }
-  syntax["LspDiagnosticsDefaultInformation"] = { fg = colors.cyan, guisp = colors.cyan, style = "none" }
-  syntax["LspDiagnosticsDefaultHint"] = { fg = colors.green, guisp = colors.green, style = "none" }
-  syntax["LspDiagnosticsUnderlineError"] = { fg = colors.none, guisp = colors.none, style = "underline" }
-  syntax["LspDiagnosticsUnderlineWarning"] = { fg = colors.none, guisp = colors.none, style = "underline" }
-  syntax["LspDiagnosticsUnderlineInformation"] = { fg = colors.none, guisp = colors.none, style = "underline" }
-  syntax["LspDiagnosticsUnderlineHint"] = { fg = colors.none, guisp = colors.none, style = "underline" }
+  syntax["DiagnosticError"] = { fg = colors.red, guisp = colors.red, style = "none" }
+  syntax["DiagnosticWarn"] = { fg = colors.yellow, guisp = colors.yellow, style = "none" }
+  syntax["DiagnosticInfo"] = { fg = colors.cyan, guisp = colors.cyan, style = "none" }
+  syntax["DiagnosticHint"] = { fg = colors.green, guisp = colors.green, style = "none" }
+  syntax["DiagnosticderlineError"] = { fg = colors.none, guisp = colors.none, style = "underline" }
+  syntax["DiagnosticderlineWarn"] = { fg = colors.none, guisp = colors.none, style = "underline" }
+  syntax["DiagnosticderlineInfo"] = { fg = colors.none, guisp = colors.none, style = "underline" }
+  syntax["DiagnosticUnderlineHint"] = { fg = colors.none, guisp = colors.none, style = "underline" }
 
   -- Lspsaga
   syntax["LspSagaFinderSelection"] = syntax["Search"]
-  syntax["DiagnosticError"] = syntax["LspDiagnosticsDefaultError"]
-  syntax["DiagnosticWarning"] = syntax["LspDiagnosticsDefaultWarning"]
-  syntax["DiagnosticInformation"] = syntax["LspDiagnosticsDefaultInformation"]
-  syntax["DiagnosticHint"] = syntax["LspDiagnosticsDefaultHint"]
+  syntax["DiagnosticError"] = syntax["DiagnosticError"]
+  syntax["DiagnosticWarning"] = syntax["DiagnosticWarn"]
+  syntax["DiagnosticInformation"] = syntax["DiagonosticInfo"]
+  syntax["DiagnosticHint"] = syntax["DiagnosticHint"]
   syntax["TargetWord"] = syntax["Title"]
 
   syntax["GitSignsAdd"] = syntax["DiffAdd"]
