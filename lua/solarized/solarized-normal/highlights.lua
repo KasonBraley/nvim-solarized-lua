@@ -250,6 +250,7 @@ function M.load_syntax(colors)
   syntax["DiagnosticderlineWarn"] = { fg = colors.none, guisp = colors.none, style = "underline" }
   syntax["DiagnosticderlineInfo"] = { fg = colors.none, guisp = colors.none, style = "underline" }
   syntax["DiagnosticUnderlineHint"] = { fg = colors.none, guisp = colors.none, style = "underline" }
+  syntax["LspSignatureActiveParameter"] = { fg = colors.base3, bg = colors.base00 }
 
   -- Lspsaga
   syntax["LspSagaFinderSelection"] = syntax["Search"]
