@@ -252,14 +252,6 @@ function M.load_syntax(colors)
   syntax["DiagnosticUnderlineHint"] = { fg = colors.none, guisp = colors.none, style = "underline" }
   syntax["LspSignatureActiveParameter"] = { fg = colors.base3, bg = colors.base00 }
 
-  -- Lspsaga
-  syntax["LspSagaFinderSelection"] = syntax["Search"]
-  syntax["DiagnosticError"] = syntax["DiagnosticError"]
-  syntax["DiagnosticWarning"] = syntax["DiagnosticWarn"]
-  syntax["DiagnosticInformation"] = syntax["DiagonosticInfo"]
-  syntax["DiagnosticHint"] = syntax["DiagnosticHint"]
-  syntax["TargetWord"] = syntax["Title"]
-
   syntax["GitSignsAdd"] = syntax["DiffAdd"]
   syntax["GitSignsChange"] = syntax["DiffChange"]
   syntax["GitSignsDelete"] = syntax["DiffDelete"]
